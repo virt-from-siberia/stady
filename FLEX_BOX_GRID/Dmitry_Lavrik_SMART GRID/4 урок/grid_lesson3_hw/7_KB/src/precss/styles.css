@@ -1,0 +1,115 @@
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td,menu{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img,abbr{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ul li,menu li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+
+/* styles */
+
+img{
+    max-width: 100%;
+}
+
+section.profit{
+	background: #000;
+	padding: 15px 0;
+}
+
+section.profit .wrap{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+section.profit .wrap .relation {
+	position: relative;
+	max-width: 970px;
+	margin: auto;
+}
+
+section.profit .wrap .relation .offset {
+	padding-top: 63%;
+}
+
+section.profit .wrap .relation .offset-16-9 {
+	padding-top: 56.25%;
+}
+
+section.profit .wrap .relation .wrapper{
+		position: absolute;
+		top: 0;
+		left: 0;	
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		background: #fff;
+}
+
+section.profit .wrap .relation .wrapper .bigItem{
+	flex: 1 1 100%;
+	padding: 6px 10px;
+	box-sizing: content-box;
+	width: 34%;
+}
+
+section.profit .wrap .wrapper .items{
+		display: flex;
+		flex-direction: column;
+		width: 32%;
+		flex: 1 1 100%;
+}
+
+section.profit .wrap .wrapper .item1{
+	order: -1;
+}
+
+section.profit .wrap .wrapper .items .item{
+	box-sizing: content-box;
+		padding: 4px 10px;
+		flex: 1 1 50%;
+}
+
+@media screen and (max-width: 780px){
+
+	section.profit .wrap .relation {
+		max-width: 512px;
+	}
+
+	section.profit .wrap .relation .offset {
+		padding-top: 117%;
+	}
+
+	section.profit .wrap .relation .wrapper .bigItem{
+		width: 64%;
+	}
+
+	section.profit .wrap .wrapper .items{
+		flex: 1 1 50%;
+		width: 30%;
+	}
+
+	section.profit .wrap .wrapper .item1{
+		order: 1;
+	}
+}
+
+@media screen and (max-width: 380px){
+
+	section.profit .wrap .relation .offset {
+		display: none;
+	}
+
+	section.profit .wrap .relation .wrapper{
+		flex-wrap: nowrap;
+        position: static;
+	}
+
+	section.profit .wrap .relation .wrapper .bigItem{
+		width: auto;
+	}
+	
+	section.profit .wrap .wrapper .items{
+		width: auto;
+	}
+}
+
+
+/* positions */

@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 200px;
+    background: rgb(253, 253, 215);
+}
+
+
+.item {
+    background: rgb(180, 244, 255);
+    /* flex-basis: 200px; */
+    margin: 10px;
+    display: block;
+    flex-shrink: 1;
+    flex-grow: 0;
+    /* align-content: flex-start; */
+}
+
+.item-1 {
+    flex-basis: 600px;
+    flex-shrink: 1;
+    display: flex;
+    background: yellow;
+    /* flex-grow: 1; */
+    padding: 10px;
+}
+
+/* .item-2{
+    flex-grow: 2;
+} */
+
+.inside1 {
+    background: rgb(81, 226, 117);
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.inside2 {
+    background: rgb(81, 139, 226);
+    margin: 5px;
+}
+
+.containerNext {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 200px;
+    background: rgb(253, 253, 215);
+}
+
+.itemNext {
+    background: rgb(180, 244, 255);
+    flex-basis: 150px;
+    margin: 10px;
+    display: block;
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* align-content: flex-start; */
+}
+
+
+
+.wrapper {
+    background: rgb(27, 32, 41);
+    padding: 50px;
+}
+
+.row {
+    border: 1px solid yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.items-Pair {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 550px;
+}
+
+.itm {
+
+    color: antiquewhite;
+    margin: 10px;
+    text-align: center;
+    flex-basis: 230px;
+
+}
+
+.text {
+    color: chocolate;
+    margin: 10px;
+}
+
+
+
+
+
+
+.containerForm {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    height: 500px;
+    background: rgb(253, 253, 215);
+    text-align: center;
+}
+
+
+.logo,
+.menu,
+.phone {
+    background: rgb(59, 58, 58);
+    color: white;
+    flex-basis: 200px;
+    margin: 10px;
+}
+
+
+.menu {}
+
+.phone {
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+
+
+
+
+.containerFormNext {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: 700px;
+    background: rgb(253, 253, 215);
+    text-align: center;
+}
+
+
+.logoNext,
+.menuNext,
+.phoneNext {
+    background: rgb(224, 97, 182);
+    color: white;
+    flex-basis: 200px;
+    margin: 10px;
+}
+
+
+.menuNext {}
+
+.phoneNext {
+    flex-basis:auto;
+    margin-top: auto;   
+}

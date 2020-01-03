@@ -1,1 +1,1 @@
-stady
+LEARNING

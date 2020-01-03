@@ -1,0 +1,72 @@
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    background: #ddd;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1024px;
+    padding: 5px 30px;
+    margin: 0 auto
+}
+
+img {
+    max-width: 100%
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.relation {
+    position: relative;
+}
+
+.relation_offset {
+    height: 0;
+}
+
+.relation_offset-1-1 {
+    padding-top: 100%;
+}
+
+.relation_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* .row {
+    border: 1px solid #f90;
+}
+
+.row .relation_offset {
+    padding-top: 56%;
+}
+
+.relation_content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.product{
+    flex: 1 1 100%;
+    width: 30%;
+} */

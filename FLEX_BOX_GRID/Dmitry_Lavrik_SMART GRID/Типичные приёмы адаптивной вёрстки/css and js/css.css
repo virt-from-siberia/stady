@@ -1,0 +1,84 @@
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav .wrapper{
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1024px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+nav {
+    background: #eee;
+}
+
+.menu {
+    /* margin-left: 100px; */
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle,
+.down {
+    font-size: 36px;
+}
+
+.menu-toggle,
+.up {
+    font-size: 36px;
+    display: none;
+}
+
+@media screen and (max-width: 560px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background: #eee;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .menu li {
+        float: none;
+    }
+
+}

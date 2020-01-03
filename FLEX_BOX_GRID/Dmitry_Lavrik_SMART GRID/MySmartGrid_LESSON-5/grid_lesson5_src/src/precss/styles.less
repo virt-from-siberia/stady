@@ -1,0 +1,117 @@
+@import "project.less";
+@import "smart-grid.less";
+
+.reset();
+
+.wrapper {
+    .wrapper();
+}
+
+
+.debug {
+    .debug(rgba(0, 0, 0, 0.1), 1px dotted rgb(166, 158, 212));
+}
+
+
+.content {
+
+    .row-flex();
+    justify-content: center;
+
+    .box {
+        .col();
+        .size(4);
+        .size-md(6);
+        .size-md(11);
+    }
+
+
+    .green {
+        background: green;
+        height: 100px;
+
+
+        .lg-block( {
+            background: rgb(71, 4, 255);
+            padding: 20px;
+
+        }
+
+        );
+
+        .md-block( {
+            background: pink;
+            padding: 10px;
+
+        }
+
+        );
+
+        .xs-block( {
+            background: red;
+            padding: 10px;
+
+        }
+
+        );
+    }
+
+    .blue {
+        background: blue;
+        height: 100px;
+    }
+
+    .yellow {
+        background: yellow;
+        height: 100px;
+    }
+}
+
+
+.items {
+    .row-flex();
+    // justify-content: center;
+
+    .item {
+        .col();
+        .size(4);
+        .size-md(6);
+        .size-sm(12);
+
+        .md-block( {
+            background: yellow;
+            padding: 10px;
+
+        }
+
+        );
+
+        .xs-block( {
+            background: red;
+            padding: 10px;
+
+        }
+
+        );
+
+
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        .img {
+            border-radius: 50%;
+        }
+
+        .subtitle {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 3px 0;
+        }
+
+        .text {
+            font-size: 16px;
+            color: #d94948;
+        }
+    }
+}

@@ -1,0 +1,313 @@
+blockquote,
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+abbr,
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: 400
+}
+
+ul li {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+legend {
+    color: #000
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.wrapper {
+    max-width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto
+}
+
+.debug {
+    height: 100vh;
+    position: fixed;
+    width: 100%
+}
+
+.debug>div {
+    height: inherit;
+    max-width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto
+}
+
+.debug>div>div {
+    height: inherit;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px
+}
+
+.debug>div>div>div {
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+    word-wrap: break-word;
+    width: calc(8.333333333333334% - 10px);
+    height: inherit;
+    outline: #a69ed4 dotted 1px;
+    background: rgba(0, 0, 0, .1)
+}
+
+.content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.content .box {
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+    word-wrap: break-word;
+    width: calc(33.333333333333336% - 10px)
+}
+
+.content .green {
+    background: green;
+    height: 100px
+}
+
+.content .blue {
+    background: #00f;
+    height: 100px
+}
+
+.content .yellow {
+    background: #ff0;
+    height: 100px
+}
+
+.items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px
+}
+
+.items .item {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: calc(33.333333333333336% - 10px);
+    text-align: center;
+    margin: 15px 5px
+}
+
+.items .item .img {
+    border-radius: 50%
+}
+
+.items .item .subtitle {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 3px 0
+}
+
+.items .item .text {
+    font-size: 16px;
+    color: #d94948
+}
+
+@media screen and (max-width:1200px) {
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+
+    .debug>div {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+@media screen and (max-width:992px) {
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+
+    .debug>div {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+
+    .content .green {
+        background: #4704ff;
+        padding: 20px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .debug>div {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .content .box {
+        width: calc(91.66666666666667% - 10px)
+    }
+
+    .content .green {
+        background: pink;
+        padding: 10px
+    }
+
+    .items .item {
+        width: calc(50% - 10px);
+        background: #ff0;
+        padding: 10px
+    }
+}
+
+@media screen and (max-width:576px) {
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .debug>div {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .items .item {
+        width: calc(100% - 10px)
+    }
+}
+
+@media screen and (max-width:420px) {
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .debug>div {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .content .green,
+    .items .item {
+        background: red;
+        padding: 10px
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */
