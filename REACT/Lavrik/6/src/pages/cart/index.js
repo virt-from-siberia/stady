@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 @observer
 class Cart extends React.Component {
   render() {
-    let productsRows = cartModel.products.map((product, i) => {
+    let productsRows = cartModel.productsDitaled.map((product, i) => {
       return (
         <tr key={product.id}>
           <td>{product.title}</td>
@@ -20,13 +20,13 @@ class Cart extends React.Component {
             <AppMinMax
               min={1}
               max={product.rest}
-              cnt={product.current}
-              onChange={cartModel.changeOn[i]}
+              cnt={product.cnt}
+              onChange={cnt => cartModel.change(product.id, cnt)}
             />
           </td>
-          <td>{product.price * product.current}</td>
+          <td>{product.price * product.cnt}</td>
           <td>
-            <button onClick={() => cartModel.remove(i)}>X</button>
+            <button onClick={() => cartModel.remove(product.id)}>X</button>
           </td>
         </tr>
       );
