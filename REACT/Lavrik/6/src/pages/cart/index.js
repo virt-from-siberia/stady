@@ -2,15 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import AppMinMax from "~c/inputs/minmax";
 
-import { observer } from "mobx-react";
-import cartModel from "~s/cart.js";
+import { observer, inject } from "mobx-react";
 
 import { routesMap } from "~/routes";
 import { Link } from "react-router-dom";
 
+@inject("cart")
 @observer
 class Cart extends React.Component {
   render() {
+    console.log(this.props);
     let productsRows = cartModel.productsDitaled.map((product, i) => {
       return (
         <tr key={product.id}>
