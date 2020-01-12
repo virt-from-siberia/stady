@@ -1,11 +1,12 @@
-const Instructions = ({ title, steps }) =>
+const Instructions = ({ title, steps }) => (
     <section className="instructions">
         <h2>{title}</h2>
-        {steps.map((s, i) =>
+        {steps.map((s, i) => (
             <p key={i}>{s}</p>
-        )}
+        ))}
     </section>
+);
 
-Instructions.displayName = 'Instructions'
+Instructions.displayName = "Instructions";
 
-export default Instructions
+export default Instructions;

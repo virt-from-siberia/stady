@@ -1,22 +1,22 @@
 import React from "react";
 import E404 from "~c/errors/404";
-import productModel from "~s/products.js";
 import { Link } from "react-router-dom";
 import { routesMap } from "~/routes";
-
+import ProductItem from "~c/products/item";
 
 export default function(props) {
   let id = props.match.params.id;
   let product = productModel.getById(id);
-  console.log(product);
-  return (
-    <div>
-      <h1>{product.title}</h1>
-      <hr />
-      <div>
-        <strong> Price : {product.price}</strong>
-      </div>
-      <Link to={routesMap.home}>Back to list</Link>
-    </div>
-  );
+
+  if (product === null) {
+    return <E404 />;
+  } else {
+    return (
+      <ProductItem
+        title={product.title}
+        price={product.price}
+        backUrl={routesMap.home}
+      />
+    );
+  }
 }

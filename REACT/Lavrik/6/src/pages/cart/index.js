@@ -7,11 +7,11 @@ import { observer, inject } from "mobx-react";
 import { routesMap } from "~/routes";
 import { Link } from "react-router-dom";
 
-@inject("cart")
+@inject("stores")
 @observer
 class Cart extends React.Component {
   render() {
-    console.log(this.props);
+    let cartModel = this.props.stores.cart;
     let productsRows = cartModel.productsDitaled.map((product, i) => {
       return (
         <tr key={product.id}>
