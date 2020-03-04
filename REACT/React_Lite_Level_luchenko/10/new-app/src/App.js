@@ -34,7 +34,7 @@ class App extends React.Component {
       <div>
         <form onSubmit={this.onSubmit}>
           <input onChange={this.myInput} name="text" />
-          <input type="number" name="age" onChange={this.myInput} />
+          <input type="number" name="age" onChange={this. } />
           <p> TEXT : {this.state.text}</p>
           <p> AGE : {this.state.age}</p>
           <br />

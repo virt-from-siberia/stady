@@ -6,18 +6,29 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "Введите значение",
-      name: "",
-      age: "Введите значение"
+      text: "Hello"
     };
   }
+  //props -> state
+  // static getDerivedStateFromProps(props, state) {
+  //   return { text: props.newText };
+  // }
 
-  onSubmit = evt => {
-    evt.preventDefault();
-  };
+  //after render
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        text: "setTimeout"
+      });
+    }, 3000);
+  }
 
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <p>{this.state.text}</p>
+      </div>
+    );
   }
 }
 
