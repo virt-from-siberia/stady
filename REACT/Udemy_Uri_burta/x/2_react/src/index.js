@@ -1,12 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Time from "./Components/Time";
+import ToDoList from "./Components/TodoList";
+import AppHeader from "./Components/header";
+import SearchPanel from "./Components/searchPanel";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = () => {
+  const loginBox = <span>Log in Please</span>;
+  const isLoggedIn = true;
+  const welcomeBox = <h2>Welcome Back</h2>;
+  return (
+    <React.Fragment>
+      {isLoggedIn ? welcomeBox : loginBox}
+      <AppHeader />
+      <SearchPanel />
+      <ToDoList />
+    </React.Fragment>
+  );
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.querySelector("#root"));
