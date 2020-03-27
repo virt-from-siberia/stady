@@ -6,15 +6,16 @@ import AppHeader from "./Components/header";
 import SearchPanel from "./Components/searchPanel";
 
 const App = () => {
-  const loginBox = <span>Log in Please</span>;
-  const isLoggedIn = true;
-  const welcomeBox = <h2>Welcome Back</h2>;
+  const todoData = [
+    { label: "Drink coffe", important: false, id: 1 },
+    { label: "Make awesome App", important: true, id: 2 },
+    { label: "Have a lunch", important: false, id: 3 }
+  ];
   return (
     <React.Fragment>
-      {isLoggedIn ? welcomeBox : loginBox}
       <AppHeader />
       <SearchPanel />
-      <ToDoList />
+      <ToDoList todos={todoData} />
     </React.Fragment>
   );
 };
